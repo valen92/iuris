@@ -7,20 +7,17 @@
     <title>iuris Project - Software para Abogados</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/estilo_background.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/materialize.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/estilo.css">
-    <link rel="shortcut icon" type="image/xicon" href="<?php echo base_url(); ?>/images/favicon.ico"/>
-    <!--Editor de Texto-->
+    <link rel="shortcut icon" type="image/xicon" href="<?php echo base_url(); ?>images/favicon.ico"/>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/background.css">
     <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <!--Boton/Barra de Herramientas-->
     <div class="fixed-action-btn" style="bottom: 50px; right: 24px;">
-      <a class="btn-floating btn-large red">
-      <i class="large material-icons">settings</i></a>
-
+      <a class="btn-floating btn-large red"><i class="large material-icons">settings</i></a>
       <ul>
-        <li><a class="btn-floating red" href="<?php echo base_url(); ?>Welcome/nuevoProceso"><i class="material-icons">description</i></i></a></li>
-        <li><a class="btn-floating red darken-1" href="<?php echo base_url(); ?>Welcome/verTerceros"><i class="material-icons">perm_contact_calendar</i></a></li>
+        <li><a class="btn-floating red"><i class="material-icons">description</i></i></a></li>
+        <li><a class="btn-floating red darken-1"><i class="material-icons">perm_contact_calendar</i></a></li>
         <li><a class="btn-floating red"><i class="material-icons">today</i></a></li>
         <li><a class="btn-floating red"><i class="material-icons">email</i></a></li>
         <li><a class="btn-floating red"><i class="material-icons">dns</i></i></a></li>
@@ -30,7 +27,7 @@
     </div>
 
     <!--Menu/Bsucador-->
-    <nav>
+    <nav> 
       <div class="nav-wrapper">
         <div class="col s4">
           <a class="waves-effect waves-light btn">Nuevo Proceso</a>
@@ -48,7 +45,7 @@
       </div>
     </nav>
 
-    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!--Importar jQuery Antes de materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -73,24 +70,18 @@
         $('.modal-trigger').leanModal();
       });
     </script>
-    
+  
     <!--Footer-->
     <footer>
       <div class="row">
-        <img src="<?php echo base_url(); ?>images/opcion_menu.png" width="736" height="392" usemap="#Map">
-        <map name="Map">
-          <area shape="rect" coords="130,20,266,187" href="<?php echo base_url(); ?>Welcome/perfil">
-          <area shape="rect" coords="297,20,441,182" href="#">
-          <area shape="rect" coords="470,20,613,182" href="<?php echo base_url(); ?>Welcome/nuevoCliente">
-          <area shape="rect" coords="276,331,467,392" href="<?php echo base_url(); ?>Welcome/menu_">
-        </map>
-      </div>
-    </footer>
-    <footer class="page-footer">
-      <div class="row">
-        <div class="footer-copyright">
-          <img src="<?php echo base_url(); ?>images/iuris_proyect_abogados.png" width="219" height="30">
-        </div>
+        <a href="<?php echo base_url(); ?>Welcome/menu"><img src="<?php echo base_url(); ?>images/menu_iuris.png" width="202" height="59" usemap="#Map"></a>
+        <footer class="page-footer">
+          <div class="row">
+            <div class="footer-copyright">
+              <img src="<?php echo base_url(); ?>images/iuris_proyect_abogados.png" width="219" height="30">
+            </div>
+          </div>
+        </footer>
       </div>
     </footer>
   </body>

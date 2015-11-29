@@ -41,7 +41,15 @@ class Welcome extends CI_Controller {
 			echo "<script>alert('El usuario y/o contraseña son incorrectos');</script>";
 		}
 	}
+	
+	function menu_(){
+		$this->load->view('menu_');
+	}
 
+	function menu(){
+		$this->load->view('menu');
+	}
+	
 	function perfil(){
 		$usuario=$this->session->userdata('idUsuario');
 		$datos['data']=$this->usuario_modelo->perfil($usuario);
