@@ -151,6 +151,9 @@
 
           <!--Botón Guardar-->
           <input class="btn waves-effect waves-light" name="btnValidar" type="button" id="btnValidar"  value="Guardar" onclick="validarPerfil()">
+          <a href="<?php echo base_url(); ?>Welcome/menu">
+            <input class="btn waves-effect waves-light" name="btnValidar" type="button" id="btnValidar"  value="Volver">
+          </a>
 
         </form>
         
