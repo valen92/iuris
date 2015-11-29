@@ -7,6 +7,7 @@
     <title>iuris Project - Software para Abogados</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/estilo_background.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/materialize.min.css">
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/validaciones.js"></script>
     <link rel="shortcut icon" type="image/xicon" href="<?php echo base_url(); ?>images/favicon.ico"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/background.css">
     <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
@@ -121,7 +122,7 @@
           <div class="input-field col s4">
             <i class="material-icons prefix"></i>
             <label for="textarea">Número de Identificación:</label>
-            <input type="text" id="razón social" name="identificacion" value="<?php echo $data->identificacionUsuario; ?>">
+            <input type="text" id="identificacion" name="identificacion" value="<?php echo $data->identificacionUsuario; ?>">
           </div>
     
           <!--Menu Selección-->
@@ -144,12 +145,13 @@
           <!--Valor de la Hora-->
           <div class="input-field col s6">
             <i class="material-icons prefix">timer</i>
-            <input type="text" id="correo" name="valor" value="<?php echo $data->valorHoraUsuario; ?>">
+            <input type="text" id="valor" name="valor" value="<?php echo $data->valorHoraUsuario; ?>">
             <label for="nombre">Valor de la Hora:</label>
           </div>
 
           <!--Botón Guardar-->
-          <button class="btn waves-effect waves-light" type="submit" name="action">Guardar</button>
+          <input class="btn waves-effect waves-light" name="btnValidar" type="button" id="btnValidar"  value="Guardar" onclick="validarPerfil()">
+
         </form>
         
         <br><br>

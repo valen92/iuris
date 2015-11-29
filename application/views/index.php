@@ -7,6 +7,7 @@
     <title>iuris Project - Software para Abogados</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/estilo.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/materialize.min.css">
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/validaciones.js"></script>
     <link rel="shortcut icon" type="image/xicon" href="<?php echo base_url(); ?>/images/favicon.ico"/>
     <style type="text/css">
       .center {
@@ -41,7 +42,7 @@
             </div>
           </div>
           <br>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Iniciar</button>
+          <input class="btn waves-effect waves-light" name="btnValidar" type="button" id="btnValidar"  value="Iniciar Sesión" onclick="validacion()">
         </form>
         <!--Importar jQuery Antes de materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
