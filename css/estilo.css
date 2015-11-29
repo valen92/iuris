@@ -1,0 +1,43 @@
+@import url('font-awesome.css');
+
+body {
+	font-family: arial;
+ 
+   background-image: url("../images/fondo2.jpg");
+}
+
+.formulario {
+  background: #ffffff;
+  width: 300px;
+  height: 200px;
+  margin: 40px auto 0;
+  padding: 25px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 8px 0 rgba(1,1,1,1);
+  box-shadow: 1px 1px 8px 0 rgba(1,1,1,1);
+}
+.formulario h2 {
+  margin: 0px 0px 10px;
+  color: #7C7374;
+  font-size: 20px;
+}
+.formulario input {
+  width: 268px;
+  margin: 0px 0px 20px;
+  padding: 10px 15px;
+  border: 1px solid #d9d9d9;
+  color: #B8B6B6;
+}
+
+
+.formulario{
+
+   background: #fffaf6;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow:
+        0 2px 2px rgba(0,0,0,0.2),
+        0 1px 5px rgba(0,0,0,0.2),
+        0 0 0 12px rgba(255,255,255,0.4);
+}
+
