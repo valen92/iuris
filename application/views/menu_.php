@@ -16,8 +16,8 @@
     <div class="fixed-action-btn" style="bottom: 50px; right: 24px;">
       <a class="btn-floating btn-large red"><i class="large material-icons">settings</i></a>
       <ul>
-        <li><a class="btn-floating red"><i class="material-icons">description</i></i></a></li>
-        <li><a class="btn-floating red darken-1"><i class="material-icons">perm_contact_calendar</i></a></li>
+        <li><a class="btn-floating red" href="<?php echo base_url(); ?>Welcome/nuevoProceso"><i class="material-icons">description</i></i></a></li>
+        <li><a class="btn-floating red darken-1" href="<?php echo base_url(); ?>Welcome/verTerceros"><i class="material-icons">perm_contact_calendar</i></a></li>
         <li><a class="btn-floating red"><i class="material-icons">today</i></a></li>
         <li><a class="btn-floating red"><i class="material-icons">email</i></a></li>
         <li><a class="btn-floating red"><i class="material-icons">dns</i></i></a></li>
