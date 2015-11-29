@@ -151,16 +151,7 @@
           <!--Botón Guardar-->
           <button class="btn waves-effect waves-light" type="submit" name="action">Guardar</button>
         </form>
-        <!-- Estructura -->
-        <div id="modal1" class="modal modal-fixed-footer">
-          <div class="modal-content">
-            <h4>Términos Legales</h4>
-            <p>Ingresar el texto</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agregar</a>
-          </div>
-        </div>
+        
         <br><br>
 
         <!--Importar jQuery Antes de materialize.js-->
