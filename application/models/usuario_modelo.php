@@ -24,11 +24,31 @@
 		return $consulta->row();
 	}
 
+	function editarTercero($usuario, $idTercero){
+		$this->db->from('tercero');
+		$this->db->where('idUsuario',$usuario);
+		$this->db->where('identificacionTercero',$idTercero);
+		$consulta = $this->db->get();
+		return $consulta->row();
+	}
+
 	function terceros($usuario){
 		$this->db->from('tercero');
 		$this->db->where('idUsuario',$usuario);
 		$consulta = $this->db->get();
 		return $consulta->result();
+	}
+
+	function actualizarTercero($usuario,$nombre,$identificacion,$celular,$direccion,$correo){
+		$data=array(
+			'nombresTercero'=>$nombre,
+			'identificacionTercero'=>$identificacion,
+			'celularTercero'=>$celular,
+			'direccionTercero'=>$direccion,
+			'correoTercero'=>$correo);
+		$this->db->where('idUsuario',$usuario);
+		$this->db->where('identificacionTercero',$identificacion);
+		return $this->db->update('tercero',$data);
 	}
 
 	function editarPerfil($nombre,$tarjeta,$celular,$direccion,$correo,$fechaNacimiento,$perfil,$identificacion,$valor){

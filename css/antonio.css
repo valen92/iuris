@@ -1,0 +1,22 @@
+
+	div.contiene_tabla2{ 
+		height: 340px; 
+		overflow: auto; 
+		overflow-background: transparent;
+		overflow-y: auto; 
+		overflow-x: hidden; 
+		width: 65%; 
+		border-bottom: solid 0px #000; 
+		border-right: solid 0px #000; 
+		scrollbar-arrow-color : #999999; scrollbar-face-color : #666666;
+		scrollbar-track-color :#3333333 ; position: absolute;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	} 
+
+    td{
+		color: black;
+		/*background-color: #D0D0D0;*/
+    }

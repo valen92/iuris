@@ -81,7 +81,7 @@
         <map name="Map">
           <area shape="rect" coords="130,20,266,187" href="<?php echo base_url(); ?>Welcome/perfil">
           <area shape="rect" coords="297,20,441,182" href="#">
-          <area shape="rect" coords="470,20,613,182" href="<?php echo base_url(); ?>Welcome/nuevoCliente">
+          <area shape="rect" coords="470,20,613,182" href="<?php echo base_url(); ?>Welcome/clientes">
           <area shape="rect" coords="276,331,467,392" href="<?php echo base_url(); ?>Welcome/menu_">
         </map>
       </div>

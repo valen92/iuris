@@ -32,7 +32,6 @@ class Welcome extends CI_Controller {
 		$usuario=$this->input->post('usuario');
 		$contrasena=$this->input->post('contrasena');
 		$prueba=$this->usuario_modelo->login($usuario,$contrasena);
-		
 		if($prueba){
 			$this->session->set_userdata('idUsuario',$usuario);
 			$this->load->view('menu');
@@ -56,6 +55,21 @@ class Welcome extends CI_Controller {
 		$this->load->view('perfil',$datos);
 	}
 
+	function editarCliente(){
+		$usuario=$this->session->userdata('idUsuario');
+		$nombre=$this->input->post('nombre');
+		$identificacion=$this->input->post('identificacion');
+		$celular=$this->input->post('celular');
+		$direccion=$this->input->post('direccion');
+		$correo=$this->input->post('correo');
+		$prueba=$this->usuario_modelo->actualizarTercero($usuario,$nombre,$identificacion,$celular,$direccion,$correo);
+		if($prueba){
+			echo "<script>alert('Los datos  han sido actualizados con exito');</script>";
+			$data['datos']=$this->usuario_modelo->terceros($usuario);
+			$this->load->view('clientes',$data);
+		}
+	}
+
 	function editarPerfil(){
 		$nombre=$this->input->post('nombre');
 		$tarjeta=$this->input->post('tarjeta');
@@ -71,6 +85,12 @@ class Welcome extends CI_Controller {
 			echo "<script>alert('Los datos  han sido actualizados con exito');</script>";
 			$this->load->view('menu');
 		}
+	}
+
+	function verTercero($idTercero){
+		$usuario=$this->session->userdata('idUsuario');
+		$data['datos']=$this->usuario_modelo->editarTercero($usuario, $idTercero);
+		$this->load->view('editarCliente',$data);
 	}
 
 	function nuevoCliente(){
@@ -111,6 +131,12 @@ class Welcome extends CI_Controller {
 			echo "<script>alert('Los datos  han sido agregados con exito');</script>";
 			$this->load->view('menu');
 		}	
+	}
+
+	public function clientes(){
+		$usuario=$this->session->userdata('idUsuario');
+		$data['datos']=$this->usuario_modelo->terceros($usuario);
+		$this->load->view('clientes',$data);
 	}
 
 	function verTerceros(){
